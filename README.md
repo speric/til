@@ -1,2 +1,3 @@
-# til
-Stuff I learn.
+# TIL
+
+Keeping track of stuff I learn.
