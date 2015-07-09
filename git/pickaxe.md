@@ -12,7 +12,7 @@ e49ed22 Elixir: pattern matching & default values
 ```
 
 Note, it's not the commit message that's important, but the commit
-itself (note "Elixir Learning" in the diff below):
+itself (note `+### Elixir Learning` in the diff below):
 
 ```
 $ git show 6849328
