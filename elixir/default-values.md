@@ -1,6 +1,6 @@
 Elixir allows for default values in function definitions:
 
-```
+```elixir
 defmodule Test do
   def sum(a \\ 3, b, c \\ 7) do
     a + b + c
@@ -10,7 +10,7 @@ end
 
 Which would work as follows:
 
-```
+```elixir
 iex>Test.sum(11, 22, 33)
 66
 iex>Test.sum(11, 22)
@@ -21,14 +21,14 @@ So far, so good. What's interesting is that when providing only one paramter
 to `sum`, Elixir will pattern match that param as `b`, or the parameter
 without a default value:
 
-```
+```elixir
 Test.sum(11)
 21
 ```
 
 It works because using a default value is actually creating an additional method definition:
 
-```
+```elixir
 def sum(a, b), do: sum(a, b, 7)
 def sum(b),    do: sum(3, b, 7)
 ```
