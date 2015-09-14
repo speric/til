@@ -23,4 +23,4 @@ Foo.first.handle.send(:_read_attribute, :id)
 
 Which will give you the real value of `id`.
 
-H/T @brandonhilkert
+H/T [@brandonhilkert](https://github.com/brandonhilkert)
