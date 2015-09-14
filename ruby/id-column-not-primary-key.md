@@ -2,7 +2,7 @@ Given a (weird) table called `foos` with columns like:
 ```
 rowid
 id
-nam
+name
 ```
 
 Where `rowid` is the primary key, and `id` is just a "regular" column in the database, you'd set up your model like:
