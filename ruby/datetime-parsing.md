@@ -12,7 +12,7 @@ requested. But the time is not "lazily evaluated", and so the following
 won't be equal
 
 ```
-> DateTime.parse("11/16/2020 11:59:58 PM").in_time_zone("Berlin).utc.to_s
+> DateTime.parse("11/16/2020 11:59:58 PM").in_time_zone("Berlin").utc.to_s
 "2020-11-16 23:59:58 UTC"
 > ActiveSupport::TimeZone[site.time_zone].parse("11/16/2020 11:59:58 PM").utc
 2020-11-16 22:59:58 UTC
